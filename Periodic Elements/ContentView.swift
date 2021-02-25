@@ -12,6 +12,11 @@ struct ContentView: View {
         Text("Hello, world!")
             .padding()
     }
+    
+    func queryAPI() {
+        let apiKey = "?rapidapi-key=42b30bc2c7mshd4f8918bdf9e17ep1df390jsn6fab5580756c"
+        let quesry = "https://periodictable.p.rapidapi.com/\(apiKey)"
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
